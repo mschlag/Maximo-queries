@@ -1,0 +1,1 @@
+((status = 'APPR' or status = 'WPCOND' or status = 'CCOMP' or status = 'INPRG' or status = 'WMATL') and (woclass = 'WORKORDER' or woclass = 'ACTIVITY') and reportdate > dateadd(d,-30,getdate()) and historyflag = 0 and istask = 0 and siteid = 'UDEL' and location like '%NE67%')
