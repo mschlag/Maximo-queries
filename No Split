@@ -1,0 +1,1 @@
+(siteid = 'UDEL' and status not in('CAN','REJECTED','DUP','STOPPED')) and (exists (select siteid from dbo.locations where ((split_ind_xf = 1)) and (location = workorder.location and siteid=workorder.siteid and fincntrlid is null and worktype in('CM','PM','STO'))))
