@@ -1,0 +1,1 @@
+( (woclass = 'WORKORDER' or woclass = 'ACTIVITY') and historyflag = 0 and ownergroup like 'HV%' and siteid = 'UDEL' and istask = 0 and reportdate between dateadd(day, -3, getdate()) and getdate())
