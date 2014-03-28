@@ -1,0 +1,1 @@
+((woclass = 'WORKORDER' or woclass = 'ACTIVITY') and status like '%WAPPR%' and historyflag = 0 and siteid = 'UDEL' and istask = 0 and ownergroup like 'HV%')
