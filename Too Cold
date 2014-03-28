@@ -1,0 +1,16 @@
+SELECT
+    dbo.workorder.wonum,
+    dbo.workorder.status,
+    dbo.workorder.description,
+    dbo.workorder.reportdate,
+    dbo.workorder.ownergroup
+FROM
+    dbo.workorder
+WHERE
+    dbo.workorder.description = 'TOO COLD'
+AND dbo.workorder.reportdate >= dateadd(DAY,-30,GETDATE()) 
+AND dbo.workorder.status <> 'COMP'
+AND dbo.workorder.status <> 'DUP'
+ORDER BY
+    dbo.workorder.ownergroup ASC,
+    dbo.workorder.reportdate ASC ;
