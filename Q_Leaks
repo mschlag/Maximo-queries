@@ -1,0 +1,1 @@
+((woclass = 'WORKORDER' or woclass = 'ACTIVITY') and leak_xf is not null and historyflag = 0 and istask = 0 and siteid = 'UDEL')
